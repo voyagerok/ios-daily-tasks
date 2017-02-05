@@ -7,23 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2EB0F40D33C777B24E02A000 /* Pods_ios_daily_tasks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4F4CD83EED406BA9B851EB7 /* Pods_ios_daily_tasks.framework */; };
+		9510E90F1E44D6C30085122A /* TaskCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9510E90E1E44D6C30085122A /* TaskCellTableViewCell.swift */; };
 		952C09321E44C33600C0CE28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952C09311E44C33600C0CE28 /* AppDelegate.swift */; };
-		952C09341E44C33600C0CE28 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952C09331E44C33600C0CE28 /* ViewController.swift */; };
+		952C09341E44C33600C0CE28 /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952C09331E44C33600C0CE28 /* TaskListViewController.swift */; };
 		952C09371E44C33600C0CE28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 952C09351E44C33600C0CE28 /* Main.storyboard */; };
 		952C093A1E44C33600C0CE28 /* ios_daily_tasks.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 952C09381E44C33600C0CE28 /* ios_daily_tasks.xcdatamodeld */; };
 		952C093C1E44C33600C0CE28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 952C093B1E44C33600C0CE28 /* Assets.xcassets */; };
 		952C093F1E44C33600C0CE28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 952C093D1E44C33600C0CE28 /* LaunchScreen.storyboard */; };
+		952C09471E44C7D400C0CE28 /* CheckTaskButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952C09461E44C7D400C0CE28 /* CheckTaskButton.swift */; };
+		9554875B1E4740F600AF3078 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554875A1E4740F600AF3078 /* DataController.swift */; };
+		9554875D1E474A1200AF3078 /* DailyTaskMO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9554875C1E474A1200AF3078 /* DailyTaskMO.swift */; };
+		95A3575A1E47A90100D7BFB1 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A357591E47A90100D7BFB1 /* DatePickerViewController.swift */; };
+		95B517061E46255600106534 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B517051E46255600106534 /* AddTaskViewController.swift */; };
+		95E27D9A1E46539000E65BEB /* DailyTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E27D991E46539000E65BEB /* DailyTask.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7D6CBE1BF0D3EFC894FF0F3D /* Pods-ios-daily-tasks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-daily-tasks.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ios-daily-tasks/Pods-ios-daily-tasks.debug.xcconfig"; sourceTree = "<group>"; };
+		9510E90E1E44D6C30085122A /* TaskCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskCellTableViewCell.swift; sourceTree = "<group>"; };
 		952C092E1E44C33600C0CE28 /* ios-daily-tasks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-daily-tasks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		952C09311E44C33600C0CE28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		952C09331E44C33600C0CE28 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		952C09331E44C33600C0CE28 /* TaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
 		952C09361E44C33600C0CE28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		952C09391E44C33600C0CE28 /* ios_daily_tasks.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ios_daily_tasks.xcdatamodel; sourceTree = "<group>"; };
 		952C093B1E44C33600C0CE28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		952C093E1E44C33600C0CE28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		952C09401E44C33600C0CE28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		952C09461E44C7D400C0CE28 /* CheckTaskButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckTaskButton.swift; sourceTree = "<group>"; };
+		9554875A1E4740F600AF3078 /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		9554875C1E474A1200AF3078 /* DailyTaskMO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyTaskMO.swift; sourceTree = "<group>"; };
+		95A357591E47A90100D7BFB1 /* DatePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
+		95B517051E46255600106534 /* AddTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
+		95E27D991E46539000E65BEB /* DailyTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyTask.swift; sourceTree = "<group>"; };
+		9CB77F8E445CEEE8CD689D1D /* Pods-ios-daily-tasks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-daily-tasks.release.xcconfig"; path = "Pods/Target Support Files/Pods-ios-daily-tasks/Pods-ios-daily-tasks.release.xcconfig"; sourceTree = "<group>"; };
+		D4F4CD83EED406BA9B851EB7 /* Pods_ios_daily_tasks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_daily_tasks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EB0F40D33C777B24E02A000 /* Pods_ios_daily_tasks.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +61,8 @@
 			children = (
 				952C09301E44C33600C0CE28 /* ios-daily-tasks */,
 				952C092F1E44C33600C0CE28 /* Products */,
+				AD0DF60CEBCEACDC8AA356FC /* Pods */,
+				F6A528286746F9FB5BDF9086 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +77,63 @@
 		952C09301E44C33600C0CE28 /* ios-daily-tasks */ = {
 			isa = PBXGroup;
 			children = (
+				95E27D981E46536800E65BEB /* Model */,
+				952C09491E44C7EC00C0CE28 /* CustomViews */,
+				952C09481E44C7DF00C0CE28 /* ViewControllers */,
 				952C09311E44C33600C0CE28 /* AppDelegate.swift */,
-				952C09331E44C33600C0CE28 /* ViewController.swift */,
 				952C09351E44C33600C0CE28 /* Main.storyboard */,
 				952C093B1E44C33600C0CE28 /* Assets.xcassets */,
 				952C093D1E44C33600C0CE28 /* LaunchScreen.storyboard */,
 				952C09401E44C33600C0CE28 /* Info.plist */,
 				952C09381E44C33600C0CE28 /* ios_daily_tasks.xcdatamodeld */,
+				9554875A1E4740F600AF3078 /* DataController.swift */,
 			);
 			path = "ios-daily-tasks";
+			sourceTree = "<group>";
+		};
+		952C09481E44C7DF00C0CE28 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				952C09331E44C33600C0CE28 /* TaskListViewController.swift */,
+				95B517051E46255600106534 /* AddTaskViewController.swift */,
+				95A357591E47A90100D7BFB1 /* DatePickerViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		952C09491E44C7EC00C0CE28 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				952C09461E44C7D400C0CE28 /* CheckTaskButton.swift */,
+				9510E90E1E44D6C30085122A /* TaskCellTableViewCell.swift */,
+			);
+			name = CustomViews;
+			sourceTree = "<group>";
+		};
+		95E27D981E46536800E65BEB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				95E27D991E46539000E65BEB /* DailyTask.swift */,
+				9554875C1E474A1200AF3078 /* DailyTaskMO.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		AD0DF60CEBCEACDC8AA356FC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7D6CBE1BF0D3EFC894FF0F3D /* Pods-ios-daily-tasks.debug.xcconfig */,
+				9CB77F8E445CEEE8CD689D1D /* Pods-ios-daily-tasks.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F6A528286746F9FB5BDF9086 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4F4CD83EED406BA9B851EB7 /* Pods_ios_daily_tasks.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +143,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 952C09431E44C33600C0CE28 /* Build configuration list for PBXNativeTarget "ios-daily-tasks" */;
 			buildPhases = (
+				D0638C35444309DD298A4817 /* [CP] Check Pods Manifest.lock */,
 				952C092A1E44C33600C0CE28 /* Sources */,
 				952C092B1E44C33600C0CE28 /* Frameworks */,
 				952C092C1E44C33600C0CE28 /* Resources */,
+				95B33D15F4DBFF931F70355F /* [CP] Embed Pods Frameworks */,
+				09BD848FA542A6EA7D5465E4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -134,12 +206,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		09BD848FA542A6EA7D5465E4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ios-daily-tasks/Pods-ios-daily-tasks-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95B33D15F4DBFF931F70355F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ios-daily-tasks/Pods-ios-daily-tasks-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0638C35444309DD298A4817 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		952C092A1E44C33600C0CE28 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				952C09341E44C33600C0CE28 /* ViewController.swift in Sources */,
+				9510E90F1E44D6C30085122A /* TaskCellTableViewCell.swift in Sources */,
+				95B517061E46255600106534 /* AddTaskViewController.swift in Sources */,
+				952C09341E44C33600C0CE28 /* TaskListViewController.swift in Sources */,
+				9554875D1E474A1200AF3078 /* DailyTaskMO.swift in Sources */,
+				952C09471E44C7D400C0CE28 /* CheckTaskButton.swift in Sources */,
+				95E27D9A1E46539000E65BEB /* DailyTask.swift in Sources */,
+				95A3575A1E47A90100D7BFB1 /* DatePickerViewController.swift in Sources */,
+				9554875B1E4740F600AF3078 /* DataController.swift in Sources */,
 				952C093A1E44C33600C0CE28 /* ios_daily_tasks.xcdatamodeld in Sources */,
 				952C09321E44C33600C0CE28 /* AppDelegate.swift in Sources */,
 			);
@@ -262,6 +389,7 @@
 		};
 		952C09441E44C33600C0CE28 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D6CBE1BF0D3EFC894FF0F3D /* Pods-ios-daily-tasks.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "ios-daily-tasks/Info.plist";
@@ -274,6 +402,7 @@
 		};
 		952C09451E44C33600C0CE28 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CB77F8E445CEEE8CD689D1D /* Pods-ios-daily-tasks.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "ios-daily-tasks/Info.plist";
@@ -303,6 +432,7 @@
 				952C09451E44C33600C0CE28 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
