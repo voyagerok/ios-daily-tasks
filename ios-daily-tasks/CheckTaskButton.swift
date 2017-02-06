@@ -45,12 +45,13 @@ class CheckTaskButton: UIButton {
         checkBoxSideLength *= 0.5
         
         drawCheckMarkBackground()
+        
         drawCheckMark()
         
         checkMarkBackgroundLayer.path = checkMarkBackgroundPath
         if isSelected {
             checkMarkLayer.path = checkMarkPath.cgPath
-            animateCheckMarkPath()
+//            animateCheckMarkPath()
         }
     }
     

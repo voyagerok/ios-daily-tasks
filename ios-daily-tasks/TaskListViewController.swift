@@ -24,7 +24,23 @@ class TaskListViewController:
     
 //    var taskList : [DailyTask]!
     
-    var currentDate: Date!
+    var inHistoryMode: Bool = false
+    var currentDate: Date! {
+        didSet {
+            let currentDateComponents = Calendar.current.dateComponents([.day, .month, .year], from: currentDate)
+            let todayDateComponents = Calendar.current.dateComponents([.day, .month, .year], from: Date.init())
+            if currentDateComponents.day == todayDateComponents.day &&
+                currentDateComponents.month == todayDateComponents.month &&
+                currentDateComponents.year == todayDateComponents.year
+            {
+                inHistoryMode = false
+            }
+            else
+            {
+                inHistoryMode = true
+            }
+        }
+    }
     var shouldUpdateFetchController: Bool = false
     
     weak var appDelegate: AppDelegate!
@@ -97,7 +113,7 @@ class TaskListViewController:
         
 //        let dateComponents = Calendar.current.dateComponents(<#T##components: Set<Calendar.Component>##Set<Calendar.Component>#>, from: <#T##Date#>)
         let formatter = DateFormatter()
-        formatter.dateFormat = "MM/dd/yyyy";
+        formatter.dateFormat = "dd/MM/yyyy";
         taskListBar.title = formatter.string(from: currentDate)
     }
 
@@ -150,6 +166,16 @@ class TaskListViewController:
             }
         }
     }
+    
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        if identifier == "editTaskSegue" {
+            if inHistoryMode {
+                return false
+            }
+        }
+        
+        return true
+    }
 
     func configureCell(cell: TaskCellTableViewCell, indexPath: IndexPath) {
         guard let selectedObject = fetchedResultsController.object(at: indexPath) as DailyTaskMO? else {
@@ -159,6 +185,8 @@ class TaskListViewController:
         cell.taskText.text = selectedObject.taskName
         cell.btnCheckTask.isSelected = selectedObject.checked
         cell.task = selectedObject
+        
+        cell.btnCheckTask.isEnabled = !inHistoryMode
     }
     
     // MARK: - Table View Delegate
