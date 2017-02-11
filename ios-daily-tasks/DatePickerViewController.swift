@@ -17,6 +17,7 @@ class DatePickerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        calendarView.select(Date.init())
         // Do any additional setup after loading the view.
     }
 
